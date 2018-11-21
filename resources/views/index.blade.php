@@ -9,5 +9,6 @@ WEB3 | Index
     Hello Worldd!!
     <a href="{{ url('welcome') }}">Welcome!</a>
     This is my first Laravel.
+    <a href="#" class="btn btn-primary"> I'm Trying </a>
 </div>
 @endsection

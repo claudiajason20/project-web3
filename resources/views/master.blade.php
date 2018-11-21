@@ -9,8 +9,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
+
         <!-- Styles -->
-        <style>
+        <link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}">
+
+        <script src="{{ url('js/jquery-3.3.1.min.js') }} "></script>
+        <!-- <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -61,9 +65,13 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style> -->
     </head>
     <body>
         @yield('content')
+
+
+         <script src="{{ url('js/popper.min.js') }} "></script>
+        <script src="{{ url('js/bootstrap.min.js') }} "></script>
     </body>
 </html>
