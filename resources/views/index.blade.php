@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('title')
+WEB3 | Index
+@endsection
+
 @section('content')
 <div class="flex-center position-ref full-height">
     Hello World!
