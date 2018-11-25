@@ -13,4 +13,12 @@ class IndexController extends Controller
     public function welcome(){
         return view('welcome');
     }
+
+    public function place(){
+        return view('place');
+    }
+
+    public function detail($id){
+        return view('detail', ['id' => $id]);
+    }
 }
