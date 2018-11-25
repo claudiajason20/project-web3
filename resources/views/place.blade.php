@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('title')
-WEB3 | Index
+WEB3 | Place
 @endsection
 
 @section('content')
