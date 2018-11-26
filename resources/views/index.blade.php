@@ -5,10 +5,8 @@ WEB3 | Index
 @endsection
 
 @section('content')
-<div class="flex-center position-ref full-height">
-    Hello Worldd!!
-    <a href="{{ url('welcome') }}">Welcome!</a>
-    This is my first Laravel.
-    <a href="#" class="btn btn-primary"> I'm Trying </a>
+<div class="container">
+    <h2>Welcome to BestTravel</h2>
+    <a class="btn btn-primary" href="{{ url('place') }}">See places</a>
 </div>
 @endsection
