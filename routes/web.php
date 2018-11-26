@@ -18,3 +18,5 @@ Route::get('/welcome', 'IndexController@welcome');
 Route::get('/place', 'IndexController@place');
 
 Route::get('/place/{id}', 'IndexController@detail');
+
+Route::get('/office','IndexController@office');
