@@ -21,4 +21,8 @@ class IndexController extends Controller
     public function detail($id){
         return view('detail', ['id' => $id]);
     }
+    
+    public function office(){
+        return view('office');
+    }
 }
