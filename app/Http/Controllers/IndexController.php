@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public $places = App\Place::all();
 
     public function index(){
         return view('index');

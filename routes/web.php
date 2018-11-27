@@ -15,7 +15,7 @@ Route::get('/', 'IndexController@index');
 
 Route::get('/welcome', 'IndexController@welcome');
 
-Route::get('/place', 'IndexController@place');
+Route::get('/place', 'PlaceController@view');
 
 Route::get('/place/{id}', 'IndexController@detail');
 
