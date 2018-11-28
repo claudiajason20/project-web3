@@ -17,9 +17,10 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('username');
-            $table->string ('password');
+            $table->text('password');
             $table->string('email');
-            $table->string('image');
+            $table->text('image');
+            $table->string('status');
             $table->timestamps();
         });
     }

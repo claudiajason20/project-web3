@@ -10,7 +10,7 @@ WEB3 | Place
         @foreach ($places as $place)
             <div class="col-lg-4 col-md-4">
                 <div class="card">
-                    <a href="{{ url('place/'.$place->id) }}" class="card-image" style="background-image: url({{ URL::asset('images/project-$place->id.jpg') }});"></a>
+                    <a href="{{ url('place/'.$place->id) }}" class="card-image" style="background-image: url({{ URL::asset('images/project-'.$place->id.'.jpg') }});"></a>
                     <div class="card-text">
                         <h4><a href="{{ url('place/'.$place->id) }}">{{ $place->name }}</a></h4>
                         <p>{{ $place->description }}</p>
