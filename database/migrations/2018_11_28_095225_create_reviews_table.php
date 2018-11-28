@@ -15,10 +15,12 @@ class CreateReviewsTable extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->increments('id');
-            $table->int('id_user');
-            $table->int('id_places');
-            $table->string('description');
-            $table->string('rating');
+            $table->unsignedInteger('id_user');
+            $table->unsignedInteger('id_place');
+            $table->text('content');
+            $table->integer('rating');
+            $table->foreign('id_user')->references('id')->on('users');
+            $table->foreign('id_place')->references('id')->on('places');
             $table->timestamps();
         });
     }

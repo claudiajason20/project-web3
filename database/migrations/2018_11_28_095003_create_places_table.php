@@ -16,13 +16,11 @@ class CreatePlacesTable extends Migration
         Schema::create('places', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->timestamps();
-        });
-
-        Schema::table('places', function (Blueprint $table) {
-            //$table->int('id_city');
-            //$table->foreign('id_city')->references('id')->on('city');
             $table->text('description');
+            $table->text('image');
+            $table->unsignedInteger('id_city');
+            $table->foreign('id_city')->references('id')->on('cities');
+            $table->timestamps();
         });
     }
 
