@@ -11,13 +11,14 @@ class PlacesTableSeeder extends Seeder
      */
     public function run()
     {
-        // factory(App\Place::class, 3)->create();
+        factory(App\City::class, 3)->create();
+        factory(App\Place::class, 3)->create();
 
-        DB::table('places')->insert([
-            'name' => str_random(3).' City',
-            'created_at' => now(),
-            'updated_at' => now(),
-            'description' => 'Lorem ipsum dolor sit amet.'
-        ]);
+        // DB::table('places')->insert([
+        //     'name' => str_random(3).' City',
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        //     'description' => 'Lorem ipsum dolor sit amet.'
+        // ]);
     }
 }
