@@ -17,6 +17,6 @@ Route::get('/welcome', 'IndexController@welcome');
 
 Route::get('/place', 'PlaceController@view');
 
-Route::get('/place/{id}', 'IndexController@detail');
+Route::get('/place/{id}', 'PlaceController@detail');
 
 Route::get('/office','IndexController@office');

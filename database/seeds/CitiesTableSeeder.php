@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PlacesTableSeeder extends Seeder
+class CitiesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -10,15 +10,15 @@ class PlacesTableSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        
-        factory(App\Place::class, 5)->create();
+    {   
+        factory(App\City::class, 5)->create();
 
-        // DB::table('places')->insert([
+        // DB::table('cities')->insert([
         //     'name' => str_random(3).' City',
         //     'created_at' => now(),
         //     'updated_at' => now(),
-        //     'description' => 'Lorem ipsum dolor sit amet.'
+        //     'description' => 'Lorem ipsum dolor sit amet.',
+        //     'image' => 'Image 1'
         // ]);
     }
 }
