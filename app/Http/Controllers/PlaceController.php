@@ -11,4 +11,9 @@ class PlaceController extends Controller
         $places = \App\Place::all();
         return view('place', ['places' => $places]);
     }
+
+    public function detail($id){
+        $place = DB::table('places')->where('id',$id)->first();
+        return view('placedetail', ['place' => $place]);
+    }
 }

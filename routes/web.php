@@ -15,8 +15,12 @@ Route::get('/', 'IndexController@index');
 
 Route::get('/welcome', 'IndexController@welcome');
 
+Route::get('/office','IndexController@office');
+
 Route::get('/place', 'PlaceController@view');
 
-Route::get('/place/{id}', 'IndexController@detail');
+Route::get('/place/{id}', 'PlaceController@detail');
 
-Route::get('/office','IndexController@office');
+Route::get('/city', 'CityController@view');
+
+Route::get('/city/{id}', 'CityController@detail');

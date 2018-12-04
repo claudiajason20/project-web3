@@ -30,6 +30,9 @@
                 <li class="nav-item {{ Request::path() ==  '/' ? 'active' : ''}}">
                     <a class="nav-link" href="{{ url('') }}">Home</a>
                 </li>
+                <li class="nav-item {{ Request::path() ==  'city' ? 'active' : ''}}">
+                    <a class="nav-link" href="{{ url('city') }}">Cities</a>
+                </li>
                 <li class="nav-item {{ Request::path() ==  'place' ? 'active' : ''}}">
                     <a class="nav-link" href="{{ url('place') }}">Places</a>
                 </li>
