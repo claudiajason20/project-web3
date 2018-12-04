@@ -11,4 +11,10 @@ class PlaceController extends Controller
         $places = \App\Place::all();
         return view('place', ['places' => $places]);
     }
+
+    public function detail($id){
+        $places = \App\Place::find($id);
+        
+        return view('detail', ['places' => $places]);
+    }
 }
