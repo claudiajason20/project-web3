@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('title')
-WEB3 | Detail
+WEB3 | Place Detail
 @endsection
 
 @section('content')
@@ -11,8 +11,8 @@ WEB3 | Detail
             <img class="img-fluid" src="{{ URL::asset('images/project-1.jpg') }}">
         </div>
         <div class="col-sm-6 text-justify">
-            <h4>{{ $places->name }}</h4>
-            <p>{{ $places->description }} </p>
+            <h4>{{ $place->name }}</h4>
+            <p>{{ $place->description }} </p>
             <a class="btn btn-primary" href="{{ url('place') }}">Back</a>
         </div>
     </div>

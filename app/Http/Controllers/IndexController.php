@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB; 
+
 class IndexController extends Controller
 {
 
@@ -14,7 +14,7 @@ class IndexController extends Controller
     public function welcome(){
         return view('welcome');
     }
-
+    
     public function office(){
         return view('office');
     }
