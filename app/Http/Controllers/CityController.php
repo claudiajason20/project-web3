@@ -13,7 +13,7 @@ class CityController extends Controller
     }
     
     public function detail($id){
-        $city = \App\City::where('id', $id)->first();
+        $city = \App\City::find($id);
         $places = \App\Place::where('id_city', $city->id)->get();
 
         return view('citydetail', ['city' => $city, 'places' => $places]);
