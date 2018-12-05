@@ -1,9 +1,5 @@
 @extends('master')
 
-@section('title')
-WEB3 | Welcome
-@endsection
-
 @section('content')
 <div class="flex-center position-ref full-height">
     Welcome
