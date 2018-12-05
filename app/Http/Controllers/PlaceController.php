@@ -13,7 +13,7 @@ class PlaceController extends Controller
     }
 
     public function detail($id){
-        $place = \App\Place::where('id', $id)->first();
+        $place = \App\Place::find($id);
         return view('placedetail', ['place' => $place]);
     }
 }

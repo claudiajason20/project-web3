@@ -36,15 +36,3 @@ $factory->define(App\Review::class, function (Faker $faker) {
 });
 
 
-$factory->define(App\User::class, function (Faker $faker) {
-    return [
-        'name' => $faker->name,
-        'username' => $faker->userName,
-        'password' => $faker->domainWord,
-        'email' => $faker->email,
-        'image' => 'cityimage',
-        'status' => 'active',
-        'created_at' => now(),
-        'updated_at' => now()
-    ];
-});

@@ -1,12 +1,8 @@
 @extends('master')
 
-@section('title')
-WEB3 | Place
-@endsection
-
 @section('content')
 <div class="jumbotron" style="background-image: url({{ URL::asset('images/project-1.jpg') }});">
-    <h1>BestTravels</h1>
+    <h1>{{ config('app.name', 'TripsAndTips') }}</h1>
 </div>
 <div class="container">
     <div class="row">

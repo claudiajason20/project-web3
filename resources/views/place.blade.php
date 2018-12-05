@@ -1,9 +1,5 @@
 @extends('master')
 
-@section('title')
-WEB3 | Place
-@endsection
-
 @section('content')
 <div class="container">
     <div class="row">

@@ -4,15 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title')</title>
+        <title>{{ config('app.name', 'TripsAndTips') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ url('css/style.css') }}">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}"> -->
+        <!-- <link rel="stylesheet" href="{{ url('css/style.css') }}"> -->
 
         <!-- jQuery -->
         <script src="{{ url('js/jquery-3.3.1.min.js') }} "></script>
@@ -20,7 +21,7 @@
     <body>
         <!-- Header -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{{ url('') }}">BestTravels</a>
+            <a class="navbar-brand" href="{{ url('') }}">{{ config('app.name', 'TripsAndTips') }}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,10 +49,22 @@
                     </div>
                 </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item {{ Request::path() ==  '/' ? 'active' : ''}}">
+                    <a class="nav-link" href="{{ url('') }}">Login</a>
+                </li>
+                <li class="nav-item {{ Request::path() ==  'register' ? 'active' : ''}}">
+                    <a class="nav-link" href="{{ url('register') }}">Register</a>
+                </li>
+                <li class="nav-item {{ Request::path() ==  'logout' ? 'active' : ''}}">
+                    <a class="nav-link" href="{{ url('logout') }}">Logout</a>
+                </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </nav>
 
